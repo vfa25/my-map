@@ -10,17 +10,27 @@
     "@types/node": "^16.7.13",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
+    "@types/uuid": "^9.0.2",
+    "@uiw/react-baidu-map": "^2.6.2",
+    "antd": "^4.1.0",
+    "antd-mobile": "^2.3.1",
+    "babel-plugin-import": "^1.13.0",
+    "customize-cra": "^0.9.1",
     "react": "^18.2.0",
+    "react-bmap": "^1.0.130",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "typescript": "^4.4.2",
+    "uuid": "^9.0.0",
     "web-vitals": "^2.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prd:setup": "pm2 deploy ecosystem.yaml production setup",
+    "prd:deploy": "pm2 deploy ecosystem.yaml production"
   },
   "eslintConfig": {
     "extends": [
